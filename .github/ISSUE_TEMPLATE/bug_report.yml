@@ -10,7 +10,7 @@ body:
     attributes:
       label: "I searched for similar bugs"
       options:
-        - label: "I searched for similar bugs"
+        - label: "**I searched for similar bugs**"
           required: true
 
   - type: textarea
@@ -49,19 +49,19 @@ body:
       label: "🚦 Issue Severity"
       description: "Select the severity level."
       options:
-        - "Annoying: Minor visual glitches or small inconveniences."
-        - "Minor: Affects gameplay slightly but not disruptive."
-        - "Major: Impacts core mechanics, though still playable."
-        - "Critical: Game‑breaking issues that render the game unplayable."
+        - "**Annoying:** Minor visual glitches or small inconveniences."
+        - "**Minor:** Affects gameplay slightly but not disruptive."
+        - "**Major:** Impacts core mechanics, though still playable."
+        - "**Critical:** Game‑breaking issues that render the game unplayable."
+      required: true
 
-  - type: checkboxes
-    id: additional_classification
+  - type: markdown
     attributes:
-      label: "🏷️ Additional Classification"
-      options:
-        - label: "Not a Bug: Intended behavior."
-        - label: "Duplicate: Already reported issue."
-        - label: "Won’t Fix: Valid report but no fix planned."
+      value: |
+        ### 🏷️ Additional Classification
+        **Not a Bug:** Intended behavior.  
+        **Duplicate:** Already reported issue.  
+        **Won’t Fix:** Valid report but no fix planned.
 
   - type: textarea
     id: environment_details
