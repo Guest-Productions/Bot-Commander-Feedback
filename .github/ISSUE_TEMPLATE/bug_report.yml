@@ -40,7 +40,7 @@ body:
   - type: textarea
     id: screenshots_videos
     attributes:
-      label: "🎥 Screenshots / Videos"
+      label: "🎥 Additional Screenshots / Videos"
       description: "If applicable, drag‑and‑drop images or a brief video here."
 
   - type: dropdown
@@ -49,10 +49,10 @@ body:
       label: "🚦 Issue Severity"
       description: "Select the severity level."
       options:
-        - "**Annoying:** Minor visual glitches or small inconveniences."
-        - "**Minor:** Affects gameplay slightly but not disruptive."
-        - "**Major:** Impacts core mechanics, though still playable."
-        - "**Critical:** Game‑breaking issues that render the game unplayable."
+        - "Annoying: Minor visual glitches or small inconveniences."
+        - "Minor: Affects gameplay slightly but not disruptive."
+        - "Major: Impacts core mechanics, though still playable."
+        - "Critical: Game‑breaking issues that render the game unplayable."
     validations:
       required: true
 
@@ -63,12 +63,6 @@ body:
         **Not a Bug:** Intended behavior.  
         **Duplicate:** Already reported issue.  
         **Won’t Fix:** Valid report but no fix planned.
-
-  - type: textarea
-    id: environment_details
-    attributes:
-      label: "🔧 Environment Details"
-      description: "OS, game version, hardware, etc."
 
   - type: textarea
     id: logs
