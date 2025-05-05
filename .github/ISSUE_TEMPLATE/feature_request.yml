@@ -13,35 +13,29 @@ body:
         - label: "I searched for similar suggestions"
           required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ### 💡 Suggestion Summary
-        <!-- A clear and concise description of the feature or improvement. -->
-
   - type: textarea
     id: suggestion_summary
     attributes:
       label: "💡 Suggestion Summary"
-      description: "A clear and concise description of the feature or improvement."
+      description: "A clear, concise description of the feature or improvement."
 
   - type: textarea
     id: motivation_benefits
     attributes:
       label: "🎯 Motivation & Benefits"
-      description: "Why is this important? What problem does it solve? Who will benefit, and how?"
+      description: "Why is this important? What problem does it solve? Who benefits and how?"
 
   - type: textarea
     id: proposed_implementation
     attributes:
       label: "🚀 Proposed Implementation"
-      description: "Outline your idea for how this could be implemented. Code snippets or pseudo‑code welcome."
+      description: "Outline how this could be implemented (code snippets/pseudo‑code welcome)."
 
   - type: textarea
     id: alternatives_considered
     attributes:
       label: "🔄 Alternatives Considered"
-      description: "Other approaches you’ve thought about, and why you didn’t choose them."
+      description: "Other approaches you considered and why you didn’t choose them."
 
   - type: checkboxes
     id: checklist
@@ -52,6 +46,6 @@ body:
 
   - type: markdown
     attributes:
-      value: >
+      value: |
         > Feel free to remove any sections that don’t apply.  
         > Thanks for helping us improve the game!
