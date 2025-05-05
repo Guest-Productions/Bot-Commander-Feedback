@@ -53,7 +53,8 @@ body:
         - "**Minor:** Affects gameplay slightly but not disruptive."
         - "**Major:** Impacts core mechanics, though still playable."
         - "**Critical:** Game‑breaking issues that render the game unplayable."
-      required: true
+      validations:
+        required: true
 
   - type: markdown
     attributes:
