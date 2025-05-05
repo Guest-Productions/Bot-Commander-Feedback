@@ -13,61 +13,49 @@ body:
         - label: "I searched for similar bugs"
           required: true
 
-  - type: markdown
+  - type: textarea
+    id: issue_description
     attributes:
-      value: |
-        ### 🐛 Issue Description
-        A clear and concise description of what the bug is.
+      label: "🐛 Issue Description"
+      description: "A clear, concise description of the bug."
 
   - type: textarea
-    id: issue-description
+    id: reproduction_steps
     attributes:
-      label: "Issue Description"
-      description: "A clear and concise description of what the bug is."
-
-  - type: markdown
-    attributes:
-      value: |
-        ### 📋 Reproduction Steps
-        Provide step-by-step instructions to reproduce the issue, if applicable.
-
-  - type: textarea
-    id: reproduction-steps
-    attributes:
-      label: "Reproduction Steps"
+      label: "📋 Reproduction Steps"
       description: "Step-by-step instructions to reproduce the issue."
 
   - type: textarea
-    id: expected-behavior
+    id: expected_behavior
     attributes:
       label: "🎯 Expected Behavior"
       description: "What you expected to happen."
 
   - type: textarea
-    id: actual-behavior
+    id: actual_behavior
     attributes:
       label: "💥 Actual Behavior"
       description: "What happened instead."
 
   - type: textarea
-    id: screenshots-videos
+    id: screenshots_videos
     attributes:
       label: "🎥 Screenshots / Videos"
-      description: "If applicable, add screenshots or a brief video."
+      description: "If applicable, drag‑and‑drop images or a brief video here."
 
   - type: dropdown
-    id: issue-severity
+    id: issue_severity
     attributes:
       label: "🚦 Issue Severity"
       description: "Select the severity level."
       options:
-        - "Annoying: Minor visual glitches or small inconveniences that don’t impact functionality."
+        - "Annoying: Minor visual glitches or small inconveniences."
         - "Minor: Affects gameplay slightly but not disruptive."
         - "Major: Impacts core mechanics, though still playable."
-        - "Critical: Game-breaking issues that render the game unplayable."
+        - "Critical: Game‑breaking issues that render the game unplayable."
 
   - type: checkboxes
-    id: additional-classification
+    id: additional_classification
     attributes:
       label: "🏷️ Additional Classification"
       options:
@@ -75,8 +63,20 @@ body:
         - label: "Duplicate: Already reported issue."
         - label: "Won’t Fix: Valid report but no fix planned."
 
+  - type: textarea
+    id: environment_details
+    attributes:
+      label: "🔧 Environment Details"
+      description: "OS, game version, hardware, etc."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📝 Logs / Error Messages"
+      description: "Paste any relevant output."
+
   - type: markdown
     attributes:
-      value: >
+      value: |
         > Feel free to remove any sections that don’t apply.  
         > Thanks for helping us improve the game!
